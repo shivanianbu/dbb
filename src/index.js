@@ -18,7 +18,7 @@ router.get("/",function(req,res){
     res.json({mess: "ok"})
 })
 
-app.use('/.netlify/functions/index',router)
+app.use('/',router)
 
 module.exports=app;
 module.exports.handler=serverless(app)
