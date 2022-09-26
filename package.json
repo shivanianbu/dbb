@@ -2,11 +2,10 @@
   "name": "db",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./functions/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src"
+    "build": "netlify-lambda build src",
+    "start": "nodemon server-local.js"
   },
   "author": "",
   "license": "ISC",
